@@ -2,13 +2,9 @@
 class FactoresPrimos{
   static generar(n){
     let primos = [];
-    if(n > 1){
-      while(n%2 === 0){
-        primos.push(2);
-        n /= 2;
-      }
-      if(n > 1){
-        primos.push(n);
+    for(let candidato=2; n>1; candidato++){
+      for(; n%candidato === 0; n /= candidato){ //el primer punto y coma delimita la inicialización del for (que no existe en este caso)
+        primos.push(candidato);
       }
     }
     return primos;
