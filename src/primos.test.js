@@ -28,4 +28,8 @@ describe("Numeros Primos", () => {
   it("devuelve 3,3", () => {
     expect(FactoresPrimos.generar(9)).toEqual([3,3]);
   });
+
+  it("devuelve 2,5", () => {
+    expect(FactoresPrimos.generar(10)).toEqual([2,5]);
+  });
 });
