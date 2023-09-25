@@ -16,4 +16,8 @@ describe("Numeros Primos", () => {
   it("devuelve 2,2", () => {
     expect(FactoresPrimos.generar(4)).toEqual([2,2]);
   });
+
+  it("devuelve 2,3", () => {
+    expect(FactoresPrimos.generar(6)).toEqual([2,3]);
+  });
 });
